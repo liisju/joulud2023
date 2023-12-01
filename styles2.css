@@ -7,9 +7,10 @@ body, h1, h2, p, ul, li {
 /* Basic styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
   color: #333;
   line-height: 1.6;
+    background-image: url('https://images.pexels.com/photos/1303088/pexels-photo-1303088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
 }
 
 header {
@@ -47,8 +48,7 @@ footer {
 /* Specific page styles */
 /* Homepage */
 body.index {
-  background-image: url('christmas_background.jpg');
-  background-size: cover;
+
 }
 
 h1, h2, p {
@@ -62,6 +62,7 @@ h1, h2, p {
 .navbar {
   background-color: #e64d4d;
   padding: 15px 0;
+
 }
 
 .navbar ul {
@@ -85,41 +86,7 @@ h1, h2, p {
 .navbar ul li a:hover {
   background-color: #ff7f7f;
 }
-.slideshow-container {
-    height: 300px;
-  max-width: 800px;
-  position: center;
-  place-content: center;
 
-
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-    top: 40%;
-  margin-left: 20%;
-    margin-right: 20%;
-  padding: 16px;
-  color: #3a3131;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  color: rgba(164, 164, 164, 0.8);
-}
 
 /* Caption text */
 .text {
@@ -127,7 +94,8 @@ h1, h2, p {
     align-items: center;
     margin-left: 350px;
   color: #ff7f7f;
-  font-size: 15px;
+  font-size: 20px;
+    padding-top: 5px;
     margin-bottom: 0px;
   height: 20px;
   text-align: center;
@@ -185,28 +153,50 @@ h1, h2, p {
 .container_left{
 
     color: #ff7f7f;
-    margin-left: 20%;
-    margin-top: -21%;
+    margin-left: 0%;
+    margin-top: 28%;
     height: 300px;
 }
 .container_left2{
 
     color: #ff7f7f;
-    margin-left: 25%;
-    margin-top: -16%;
+    margin-left: 0%;
+    margin-top: 23%;
     height: 300px;
 }
 .container_left3{
 
     color: #ff7f7f;
-    margin-left: 25%;
-    margin-top: -34%;
+    margin-left: 0%;
+    margin-top: 30%;
     height: 300px;
 }
 .container_left4{
 
     color: #ff7f7f;
-    margin-left: 25%;
-    margin-top: -30%;
+    margin-left: 0%;
+    margin-top: 22%;
     height: 300px;
 }
+
+.container {
+  position: relative; /* Required for absolute positioning */
+
+}
+
+.positioned-image {
+  position: absolute;
+  top: 40%; /* Adjust vertical position */
+  left: 50%; /* Adjust horizontal position */
+  transform: translate(-50%, -50%); /* Center the image */
+
+}
+
+    .poll-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
